@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #222;
+}
+
+.navbar-brand, .nav-link, .dropdown-item {
+    color: #fff !important;
+    transition: color 0.3s;
+}
+
+.navbar-brand:hover, .nav-link:hover, .dropdown-item:hover {
+    color: #ff6347 !important;
+}
+
+.dropdown-menu {
+    background-color: #222; /* Set background to black */
+    border: none; /* Optional: Remove border if you want a cleaner look */
+}
+
+.dropdown-item {
+    color: #fff; /* Set text color to white */
+}
+
+.dropdown-item:hover {
+    background-color: #333; /* Darker shade on hover */
+    color: #ff6347; /* Optional: Change text color on hover */
+}

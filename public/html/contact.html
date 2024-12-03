@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Drink Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Adding Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .hero-contact {
+            background-image: url('/images/contact-hero.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        .hero-contact h1 {
+            font-size: 3rem;
+            animation: fadeInDown 1.5s;
+        }
+        .contact-section {
+            padding: 50px 0;
+        }
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        .form-control {
+            border-radius: 0;
+        }
+        .btn-custom {
+            background-color: #ff6347;
+            border-color: #ff6347;
+            color: white;
+            border-radius: 0;
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+        .btn-custom:hover {
+            background-color: #e5533f;
+            border-color: #e5533f;
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="/public/html/index.html">Drink Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/public/html/index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <a class="dropdown-item" href="/public/html/products/cold-drinks.html">Cold Drinks</a>
+                            <a class="dropdown-item" href="/public/html/products/cocktails.html">Cocktails</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/mission-vision.html">Mission & Vision</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Team
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="ourTeamDropdown">
+                            <a class="dropdown-item" href="/public/html/executives.html">Executives</a>
+                            <a class="dropdown-item" href="/public/html/staff.html">Staff</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-contact">
+        <h1 class="animate__animated animate__fadeInDown">Contact Us</h1>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="container contact-section">
+        <div class="row">
+            <div class="col-md-8 offset-md-2">
+                <h2 class="section-title text-center">Get In Touch</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Enter the subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-custom btn-block">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Google Maps Section -->
+    <div class="container contact-section">
+        <h2 class="section-title text-center">Our Location</h2>
+        <div class="row">
+            <div class="col-md-12">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509322!2d144.95373631531858!3d-37.81720997975166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f2e4dfd%3A0xa0f7a9f5823ecb51!2sYour%20Store%20Name!5e0!3m2!1sen!2sus!4v1625673925585!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Address & Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Us</h5>
+                    <p><strong>Address:</strong> 123 Drink Lane, Beverage City, AB 45678</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@drinkstore.com</p>
+                </div>
+                <!-- Social Media Links -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="footer-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Designer Credit -->
+                <div class="col-lg-4">
+                    <h5>Designed By</h5>
+                    <p>Website designed by <a href="https://themewagon.com/themes/furni-online-store/">ThemeWagon</a>.</p>
+                    <p>© 2024 Drink Store. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript" src="/public/js/contact.js"></script>
+</body>
+</html>

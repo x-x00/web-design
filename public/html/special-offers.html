@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Special Offers - Drink Store</title>
+    <!-- Bootstrap CSS for responsiveness -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Adding Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+    <style>
+        /* Custom Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f5;
+            overflow-x: hidden;
+        }
+        
+        /* Section styling */
+        .offers-section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #333;
+        }
+
+        /* Grid layout for offers */
+        .offers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Offer card styling */
+        .offer-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .offer-card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Consistent Image Sizing */
+        .offer-card img {
+            width: 100%;
+            height: 200px; /* Adjust the height to your preference */
+            object-fit: cover; /* Ensures images are scaled proportionately and cropped */
+        }
+
+        /* Offer card information */
+        .offer-info {
+            padding: 15px;
+        }
+
+        .offer-title {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .offer-details {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* Responsive media queries */
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/public/html/index.html">Drink Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/public/html/index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <a class="dropdown-item" href="/public/html/products/cold-drinks.html">Cold Drinks</a>
+                            <a class="dropdown-item" href="/public/html/products/cocktails.html">Cocktails</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/mission-vision.html">Mission & Vision</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Team
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="ourTeamDropdown">
+                            <a class="dropdown-item" href="/public/html/executives.html">Executives</a>
+                            <a class="dropdown-item" href="/public/html/staff.html">Staff</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="offers-section">
+        <div class="container">
+            <h2 class="section-title">Special Offers</h2>
+            <div class="offers-grid">
+                <!-- Offer Card Example -->
+                <div class="offer-card">
+                    <img src="/images/special-offer-1.jpg" alt="Offer Image">
+                    <div class="offer-info">
+                        <h3 class="offer-title">Buy 1 Get 1 Free</h3>
+                        <p class="offer-details">Enjoy our special Buy 1 Get 1 Free offer on all cold drinks. Limited time offer!</p>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <img src="/images/special-offer-2.jpg" alt="Offer Image">
+                    <div class="offer-info">
+                        <h3 class="offer-title">20% Off on Cocktails</h3>
+                        <p class="offer-details">Get 20% off on all cocktails this weekend. Don\'t miss out on this great deal!</p>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <img src="/images/special-offer-3.jpg" alt="Offer Image">
+                    <div class="offer-info">
+                        <h3 class="offer-title">Free Cold Drink on Order over $50</h3>
+                        <p class="offer-details">Order over $50 and get a free cold drink of your choice. Offer valid for this month only.</p>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <img src="/images/special-offer-4.jpg" alt="Offer Image">
+                    <div class="offer-info">
+                        <h3 class="offer-title">10% Off on Cold Drinks</h3>
+                        <p class="offer-details">Get 10% off on all cold drinks this month. Don\'t miss out on this great deal!</p>
+                    </div>
+                </div>
+
+                <div class="offer-card">
+                    <img src="/images/special-offer-5.jpg" alt="Offer Image">
+                    <div class="offer-info">
+                        <h3 class="offer-title">Free Cocktail on Order over $100</h3>
+                        <p class="offer-details">Order over $100 and get a free cocktail of your choice. Offer valid for this week only.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Address & Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Us</h5>
+                    <p><strong>Address:</strong> 123 Drink Lane, Beverage City, AB 45678</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@drinkstore.com</p>
+                </div>
+                <!-- Social Media Links -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="footer-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Designer Credit -->
+                <div class="col-lg-4">
+                    <h5>Designed By</h5>
+                    <p>Website designed by <a href="https://themewagon.com/themes/furni-online-store/">ThemeWagon</a>.</p>
+                    <p>© 2024 Drink Store. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

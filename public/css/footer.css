@@ -1,0 +1,30 @@
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 30px 0;
+}
+
+footer h5 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+footer p, footer a {
+    color: #ddd;
+    font-size: 14px;
+}
+
+footer a:hover {
+    color: #ff5722;
+    text-decoration: underline;
+}
+
+.footer-icons a {
+    color: #ff5722;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.footer-icons a:hover {
+    color: #e64a19;
+}

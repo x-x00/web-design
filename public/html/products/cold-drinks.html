@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cold Drinks - Product Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Adding Animate.css for animations -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="/public/css/navbar.css">
+    <link rel="stylesheet" href="/public/css/products.css">
+    <link rel="stylesheet" href="/public/css/footer.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="/public/html/index.html">Drink Store</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="/public/html/index.html">Home</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Products
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                            <a class="dropdown-item" href="/public/html/products/cold-drinks.html">Cold Drinks</a>
+                            <a class="dropdown-item" href="/public/html/products/cocktails.html">Cocktails</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/mission-vision.html">Mission & Vision</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Our Team
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="ourTeamDropdown">
+                            <a class="dropdown-item" href="/public/html/executives.html">Executives</a>
+                            <a class="dropdown-item" href="/public/html/staff.html">Staff</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="/public/html/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4 animate__animated animate__fadeInDown">Cold Drinks</h1>
+        <div class="row">
+            <!-- Product 1 -->
+            <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__fadeInUp">
+                <div class="card h-100">
+                    <img src="/images/products/sparkling-water.jpg" class="card-img-top product-image" alt="Cold Drink 1">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Sparkling Water</h5>
+                        <p class="card-text">$3.50</p>
+                        <a href="/public/html/product-details/sparkling-water.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__fadeInUp">
+                <div class="card h-100">
+                    <img src="/images/products/fruit-juice.jpg" class="card-img-top product-image" alt="Cold Drink 2">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Fruit Juice</h5>
+                        <p class="card-text">$3.99</p>
+                        <a href="/public/html/product-details/fruit-juice.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__fadeInUp">
+                <div class="card h-100">
+                    <img src="/images/products/coke.jpg" class="card-img-top product-image" alt="Cold Drink 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Coke</h5>
+                        <p class="card-text">$2</p>
+                        <a href="/public/html/product-details/coke.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="col-lg-4 col-md-6 mb-4 animate__animated animate__fadeInUp">
+                <div class="card h-100">
+                    <img src="/images/products/iced-tea.jpg" class="card-img-top product-image" alt="Cold Drink 3">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Iced Tea</h5>
+                        <p class="card-text">$4.50</p>
+                        <a href="/public/html/product-details/iced-tea.html" class="btn btn-primary">View Details</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+   <!-- Footer -->
+   <footer>
+        <div class="container">
+            <div class="row">
+                <!-- Address & Contact Info -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Contact Us</h5>
+                    <p><strong>Address:</strong> 123 Drink Lane, Beverage City, AB 45678</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                    <p><strong>Email:</strong> info@drinkstore.com</p>
+                </div>
+                <!-- Social Media Links -->
+                <div class="col-lg-4 col-md-6">
+                    <h5>Follow Us</h5>
+                    <div class="footer-icons">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+                <!-- Designer Credit -->
+                <div class="col-lg-4">
+                    <h5>Designed By</h5>
+                    <p>Website designed by <a href="https://themewagon.com/themes/furni-online-store/">ThemeWagon</a>.</p>
+                    <p>© 2024 Drink Store. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+<!-- Bootstrap JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
