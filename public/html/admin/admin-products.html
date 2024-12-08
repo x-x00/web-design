@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Products</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <style>
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .product-image {
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .btn-action {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h4 class="text-center mb-4">Admin Panel</h4>
+        <a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="admin-products.html"><i class="fas fa-box"></i> Products</a>
+        <a href="admin-orders.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+        <a href="admin-users.html"><i class="fas fa-users"></i> Users</a>
+        <a href="admin-reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+        <a href="admin-settings.html"><i class="fas fa-cogs"></i> Settings</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h3">Manage Products</h1>
+            <button class="btn btn-primary"><i class="fas fa-plus"></i> Add Product</button>
+        </div>
+
+        <!-- Products Table -->
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>#</th>
+                            <th>Image</th>
+                            <th>Product Name</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td><img src="../../../images/products/beer.jpg" alt="Beer" class="product-image"></td>
+                            <td>Beer</td>
+                            <td>Cocktails</td>
+                            <td>$5</td>
+                            <td>120</td>
+                            <td>
+                                <button class="btn btn-success btn-sm btn-action"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger btn-sm btn-action"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td><img src="../../../images/products/iced-tea.jpg" alt="Iced Tea" class="product-image"></td>
+                            <td>Iced Tea</td>
+                            <td>Cold Drinks</td>
+                            <td>$4.50</td>
+                            <td>85</td>
+                            <td>
+                                <button class="btn btn-success btn-sm btn-action"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger btn-sm btn-action"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td><img src="../../../images/products/gin-tonic.jpg" alt="Gin & Tonic" class="product-image"></td>
+                            <td>Gin & Tonic</td>
+                            <td>Cocktails</td>
+                            <td>$8.00</td>
+                            <td>60</td>
+                            <td>
+                                <button class="btn btn-success btn-sm btn-action"><i class="fas fa-edit"></i></button>
+                                <button class="btn btn-danger btn-sm btn-action"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

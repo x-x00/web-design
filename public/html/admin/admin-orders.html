@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Orders</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/admin.css">
+    <style>
+        .table th, .table td {
+            vertical-align: middle;
+        }
+        .badge {
+            font-size: 0.9rem;
+            padding: 0.5em 0.75em;
+        }
+        .btn-action {
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <h4 class="text-center mb-4">Admin Panel</h4>
+        <a href="admin-dashboard.html"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+        <a href="admin-products.html"><i class="fas fa-box"></i> Products</a>
+        <a href="admin-orders.html"><i class="fas fa-shopping-cart"></i> Orders</a>
+        <a href="admin-users.html"><i class="fas fa-users"></i> Users</a>
+        <a href="admin-reports.html"><i class="fas fa-chart-line"></i> Reports</a>
+        <a href="admin-settings.html"><i class="fas fa-cogs"></i> Settings</a>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h3">Manage Orders</h1>
+        </div>
+
+        <!-- Orders Table -->
+        <div class="card">
+            <div class="card-body">
+                <table class="table table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Date</th>
+                            <th>Total</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#1001</td>
+                            <td>Nathan Black</td>
+                            <td>2024-10-01</td>
+                            <td>$15.50</td>
+                            <td><span class="badge badge-success">Completed</span></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm btn-action"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-danger btn-sm btn-action"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1002</td>
+                            <td>Amy Pain</td>
+                            <td>2024-10-05</td>
+                            <td>$23.40</td>
+                            <td><span class="badge badge-warning">Pending</span></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm btn-action"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-danger btn-sm btn-action"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>#1003</td>
+                            <td>Victor Oz</td>
+                            <td>2024-10-12</td>
+                            <td>$8.75</td>
+                            <td><span class="badge badge-danger">Cancelled</span></td>
+                            <td>
+                                <button class="btn btn-primary btn-sm btn-action"><i class="fas fa-eye"></i></button>
+                                <button class="btn btn-danger btn-sm btn-action"><i class="fas fa-trash"></i></button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
